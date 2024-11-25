@@ -1,0 +1,322 @@
+/* Universele instellingen */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  scroll-behavior: smooth;
+}
+
+/* Algemeen lettertype voor koppen en paragraaf links */
+h1,
+h2,
+h3 {
+  font-family: montserrat;
+}
+p a {
+  color: #140370;
+}
+p a:hover {
+  color: #91a6c5;
+}
+
+p {
+  font-family: roboto;
+}
+
+/* Basisinstellingen voor body */
+body {
+  background-color: #d9d9d9;
+  color: #2957b5;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  min-height: 100vh;
+  margin: 0;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+header {
+  grid-area: header;
+}
+
+/*--------------------------------------------------------------
+# Main
+--------------------------------------------------------------*/
+
+main {
+  grid-area: main;
+}
+
+/*--------------------------------------------------------------
+# Navigatie
+--------------------------------------------------------------*/
+
+nav {
+  text-align: center;
+  padding-top: 0.5rem;
+  width: 50vw;
+  margin: 0 auto;
+}
+
+nav ul {
+  padding: 0;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+nav ul li a {
+  padding: 0.3125rem 0.625rem;
+  font-size: 15px;
+  color: #2957b5;
+  text-decoration: none;
+  font-family: roboto;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #91a6c5;
+}
+
+.active {
+  color: #91a6c5;
+}
+
+/*--------------------------------------------------------------
+# Projecten sectie
+--------------------------------------------------------------*/
+
+.projects {
+  margin: 0 auto;
+  width: 50vw;
+  padding-bottom: 4rem;
+}
+
+.projects-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1rem;
+}
+
+.projects-section article {
+  background-color: #91a6c5;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: left;
+  width: 90%;
+  height: 50%;
+  transition: box-shadow 0.4s;
+  border: 1px solid #2957b5;
+}
+
+.projects-section article:hover {
+  box-shadow: 0 0 11px rgb(77, 95, 158);
+}
+
+.projects-section article img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.projects-section h2 {
+  font-size: 24px;
+  margin-top: 1rem;
+}
+
+.projects-section p {
+  color: #2957b5;
+}
+
+.projects-section .learn-more {
+  color: #2957b5;
+  text-decoration: none;
+}
+
+.projects-section .learn-more:hover {
+  text-decoration: underline;
+}
+
+/*--------------------------------------------------------------
+# Typografie
+--------------------------------------------------------------*/
+
+h1,
+h2,
+h3,
+p {
+  padding-left: 2rem;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 48px;
+  border-bottom: 1px solid #2b3b7b;
+  margin-top: 8rem;
+}
+
+h3 {
+  padding-top: 4rem;
+}
+
+p {
+  line-height: 1.8rem;
+  text-align: left;
+}
+
+/*--------------------------------------------------------------
+# Sections
+--------------------------------------------------------------*/
+
+section {
+  height: 100vh;
+}
+
+.naam,
+.over,
+footer {
+  margin: 0 auto;
+  width: 50vw;
+}
+
+.naam {
+  padding-top: 23rem;
+}
+
+.over {
+  padding-top: 2rem;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+footer {
+  grid-area: footer;
+  padding-top: 2rem;
+  font-family: roboto;
+}
+
+footer p {
+  text-align: center;
+}
+
+/*--------------------------------------------------------------
+# Formulieren
+--------------------------------------------------------------*/
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #91a6c5;
+  border: 1px solid #2957b5;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #2957b5;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+form input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #2957b5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+
+form input[type="submit"]:hover {
+  background-color: #b9bfcf;
+  color: white;
+  border: 1px solid #2957b5;
+}
+
+/*--------------------------------------------------------------
+# Portfolio - Project pagina
+--------------------------------------------------------------*/
+
+.foto {
+  padding-top: 4rem;
+}
+.portfolio {
+  width: 50vw;
+}
+
+.portfolio p {
+  padding: 4rem;
+}
+
+/*--------------------------------------------------------------
+# Home Sectie
+--------------------------------------------------------------*/
+
+.over p {
+  float: right;
+  width: 70%;
+  font-size: 17px;
+}
+
+.over figure p {
+  float: left;
+  width: 100%;
+  padding: 0;
+  font-family: montserrat;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.over figure {
+  float: left;
+  width: 30%;
+  padding: 0;
+  margin: 0;
+}
+
+.over figure img {
+  border-radius: 50%;
+}
